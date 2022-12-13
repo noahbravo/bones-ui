@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/elenabravo"
   },
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Custom React component library",
   "scripts": {
     "rollup": "rollup -c",
