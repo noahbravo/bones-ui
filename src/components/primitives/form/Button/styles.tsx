@@ -1,5 +1,13 @@
 import { styled } from '../../../../stitches.config'
-import { toRem } from '../../../../styles'
+import { bgColor, toRem } from '../../../../styles'
+
+export const styleAliases = {
+  bgColor: 'backgroundColor'
+}
+
+export const styleProps = {
+  bgColor
+} as const
 
 export const variants = {
   variant: {

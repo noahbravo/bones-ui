@@ -1,16 +1,18 @@
 import React from 'react'
-import type { LayoutAndCSSProps } from '../../types'
+import type { PrimitiveProps } from '../../types'
 import { getformattedProps } from '../../../../utils/primitives'
-import { variants, StyledButton } from './styles'
+import { styleProps, styleAliases, variants, StyledButton } from './styles'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, LayoutAndCSSProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    PrimitiveProps<typeof styleProps> {
   children: React.ReactNode
-  variant: keyof typeof variants.variant
+  variant?: keyof typeof variants.variant
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, children, css, ...props }, forwardedRef) => {
-    const { mediaStyles, restProps } = getformattedProps({ props })
+    const { mediaStyles, restProps } = getformattedProps({ props, styleProps, styleAliases })
 
     return (
       <StyledButton
