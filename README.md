@@ -31,10 +31,3 @@ yarn add @elenabravo/bones-ui@latest
 ```sh
 "@elenabravo/bones-ui": "0.1.1"
 ```
-
----
-
-## To do
-
-- Add tests
-- Add [Storybook](https://storybook.js.org/)
