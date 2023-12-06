@@ -1,8 +1,4 @@
-<p align="center">
-  <img width="150" src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/skull-and-crossbones_2620-fe0f.png" alt="crossbones icon">
-</p>
-
-<h1 align="center">Bones UI</h1>
+<h1 align="center">☠️</br>Bones UI</h1>
 <br>
 
 Custom React component library inspired by [Chakra UI](https://github.com/chakra-ui/chakra-ui), [Material UI](https://github.com/mui/material-ui) and [Primer React](https://github.com/primer/react).
