@@ -25,5 +25,5 @@ yarn add @elenabravo/bones-ui@latest
 **package.json:**
 
 ```sh
-"@elenabravo/bones-ui": "0.1.3"
+"@elenabravo/bones-ui": "0.1.4"
 ```
