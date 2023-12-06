@@ -13,8 +13,8 @@
     "stylelint": "stylelint \"src/**/*.{js,ts,tsx}\"",
     "format": "prettier --config .prettierrc --ignore-path .gitignore \"src/**/*.{js,ts,tsx,json}\" --write",
     "prepare": "husky install",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "Elena Bravo",
   "license": "ISC",
@@ -51,9 +51,11 @@
     "@storybook/addon-essentials": "^7.6.3",
     "@storybook/addon-interactions": "^7.6.3",
     "@storybook/addon-links": "^7.6.3",
-    "@storybook/builder-webpack5": "^7.6.3",
-    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/addon-onboarding": "^1.0.9",
+    "@storybook/blocks": "^7.6.3",
     "@storybook/react": "^7.6.3",
+    "@storybook/react-vite": "^7.6.3",
+    "@storybook/test": "^7.6.3",
     "@storybook/testing-library": "^0.2.2",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@testing-library/react": "^14.1.2",
@@ -84,10 +86,12 @@
     "react-dom": "^18.2.0",
     "rollup": "^4.6.1",
     "rollup-plugin-dts": "^6.1.0",
+    "storybook": "^7.6.3",
     "stylelint": "^15.11.0",
     "stylelint-config-recommended": "^13.0.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.2",
+    "vite": "^5.0.6"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
